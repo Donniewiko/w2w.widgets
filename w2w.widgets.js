@@ -42,12 +42,6 @@
                             if (scope.selectedIndices[0] != index) {
                                 scope.selectedIndices[0] = index;
                             }
-                            // if the click must be a toggle, uncomment this else
-                            /*
-                              else {
-                               $scope.selectedQueueItems = [];
-                             }
-                             /**/
                         } else {
                             scope.selectedIndices = [];
                             scope.selectedIndices = [index];
@@ -69,7 +63,6 @@
                                     scope.selectedIndices.push(y);
                                 }
                             }
-
                         }
                     };
 
