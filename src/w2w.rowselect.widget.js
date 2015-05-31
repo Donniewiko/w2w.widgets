@@ -1,12 +1,6 @@
 (function() {
     'use strict';
 
-    angular.module('w2w.widgets', []);
-    
-})();
-(function() {
-    'use strict';
-
     angular.module('w2w.widgets')
         .directive('rowSelect', function() {
             return {

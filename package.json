@@ -1,0 +1,31 @@
+{
+  "name": "w2w.widgets",
+  "version": "1.0.0",
+  "description": "AngularJS 1.x widgets",
+  "main": "w2w.widgets.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Donniewiko/w2w.widgets.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "widget",
+    "directive"
+  ],
+  "author": "Jeroen Min",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Donniewiko/w2w.widgets/issues"
+  },
+  "homepage": "https://github.com/Donniewiko/w2w.widgets"
+}
