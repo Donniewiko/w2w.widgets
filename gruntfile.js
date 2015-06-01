@@ -34,6 +34,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['uglify']);
 
   // Release task
-  grunt.registerTask('release', ['uglify', 'concat']);
+  grunt.registerTask('release', ['concat', 'uglify']);
 
 };

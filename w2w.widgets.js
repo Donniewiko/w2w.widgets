@@ -53,27 +53,27 @@
 
                     // Normal click
                     if (!e.shiftKey && !e.ctrlKey) {
-                        scope.$apply(singleClick(index));
+                        scope.$apply(singleClick(scope, index));
                     }
 
                     // shift click
                     if (e.shiftKey && !e.ctrlKey) {
-                        scope.$apply(shiftClick(index));
+                        scope.$apply(shiftClick(scope, index));
                     }
 
                     // control click
                     if (!e.shiftKey && e.ctrlKey) {
-                        scope.$apply(controlClick(index));
+                        scope.$apply(controlClick(scope, index));
                     }
 
                     // control shift click
                     if (e.shiftKey && e.ctrlKey) {
-                        scope.$apply(controlShiftClick(index));
+                        scope.$apply(controlShiftClick(scope, index));
                     };
                 });
             };
 
-            function singleClick(index) {
+            function singleClick(scope, index) {
                 if (scope.selectedIndices.length == 1) {
                     if (scope.selectedIndices[0] != index) {
                         scope.selectedIndices[0] = index;
@@ -84,7 +84,7 @@
                 }
             };
 
-            function shiftClick(index) {
+            function shiftClick(scope, index) {
                 if (scope.selectedIndices.length != 0) {
                     var startID = scope.selectedIndices[0];
                     var endID = index;
@@ -102,7 +102,7 @@
                 }
             };
 
-            function controlClick(index) {
+            function controlClick(scope, index) {
                 var idx = scope.selectedIndices.indexOf(index);
                 if (idx == -1) {
                     scope.selectedIndices.push(index);
@@ -111,7 +111,7 @@
                 }
             };
 
-            function controlShiftClick(index) {
+            function controlShiftClick(scope, index) {
                 // need a copy of the array to reverse it, so i can get the last item. Array.reverse() reverses the array obviously, and i dont want that.
                 var _tempList = scope.selectedIndices;
                 var previousClick = _tempList.reverse()[0];
