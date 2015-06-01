@@ -1,8 +1,8 @@
 (function() {
-'use strict';
+    'use strict';
 
-angular.module('w2w.widgets')
-    .directive('rowSelect', function() {
+    angular.module('w2w.widgets')
+        .directive('rowSelect', function() {
             return {
                 restrict: 'EA',
                 scope: {
@@ -12,7 +12,6 @@ angular.module('w2w.widgets')
             };
 
             function link(scope, element, attrs) {
-
                 scope.selectedIndices = scope.selectedIndices || [];
 
                 element.bind('click', function(e) {
@@ -98,7 +97,5 @@ angular.module('w2w.widgets')
                     }
                 }
             };
-        }
-    };
-});
+        });
 })();

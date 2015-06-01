@@ -11,8 +11,7 @@ module.exports = function(grunt) {
               'src/w2w.widgets.module.js',  // Main module first
               'src/*.js'                    // rest follows
             ],
-        }
-        
+        }        
       }
     },
     concat: {
